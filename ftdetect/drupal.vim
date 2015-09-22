@@ -3,7 +3,7 @@
 " Drupal module files
 au BufRead,BufNewFile *.install,*.profile,*.theme,*.engine,*.test,*.module
 	\ if getline(1) =~ '<?php' |
-	\   set ft=php.drupal |
+	\   setl ft=php.drupal |
 	\ endif
 
 autocmd BufRead,BufNewFile *.{info,make,build} setf drini.drupal
